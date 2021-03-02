@@ -122,14 +122,14 @@ exports.reglevelahf = (command, pushname, getLevelingLevel, sender, ahf) => {
 //You only get your name fuck !!
 //If INFO DEVELOPER not in change, its okey!!
 exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp, _registered, uangku, role) => { 
-	return `「 *SHIZUKA BOT* 」
+	return `「 *Koboy Bot* 」
 ◪ *INFO DEVELOPER*
-  ❏ Nama: ItsmeikyXSec404
-  ❏ Wa: wa.me/6281281872699
-  ❏ Ig: https://instagram.com/itsmeikyxsec404
+  ❏ Nama: Akagami
+  ❏ Wa: wa.me/6287811186838
+  ❏ Ig: https://instagram.com/arzyle.fx
   ----------------------------------
-◪ *INFO SHIZUKA*
-  ❏ Nama: SHIZUKA 
+◪ *INFO Koboy*
+  ❏ Nama: Koboy
   ❏ Web: https://shizukaa.xyz/
   ❏ Web Api: https://shizukaa.xyz/
   ----------------------------------
@@ -157,7 +157,6 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   
 ◪ *NEW FEATURE*
   │
-  ├─ ❏ ${prefix}nsfwloli
   ├─ ❏ ${prefix}asupan
   ├─ ❏ ${prefix}wiki
   ├─ ❏ ${prefix}spamcall
@@ -390,16 +389,6 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}happymod [teks]
   ├─ ❏ ${prefix}moddroid [teks]
   
-◪ *18+ Nsfw*
-  |
-  ├─ ❏ ${prefix}blowjob
-  ├─ ❏ ${prefix}randomhentai
-  ├─ ❏ ${prefix}sfw
-  ├─ ❏ ${prefix}nsfw
-  ├─ ❏ ${prefix}randomsfw
-  ├─ ❏ ${prefix}randomnsfw
-  └─ ❏ ${prefix}nsfwneko
-  
 ◪ *FUN*
   │
   ├─ ❏ ${prefix}truth
@@ -446,7 +435,7 @@ exports.menu = (pushname, prefix, getLevelingLevel, getLevelingXp, sender, reqXp
   ├─ ❏ ${prefix}qrcode
   └─ ❏ ${prefix}afk
   
-◪ *POWERED BY ITSMEIKYXSEC404*
+◪ *POWERED BY Akagami*
 `
 }
 
