@@ -271,9 +271,6 @@ const client = new WAConnection()
 	 //
  })
  
- await client.connect({timeoutMs: 30*1000})
- await db.updateDataSession(JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
- 
  
 .on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
