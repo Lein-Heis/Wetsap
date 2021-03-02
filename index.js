@@ -333,15 +333,15 @@ client.on('group-participants-update', async (anu) => {
 			const tescuk = ["0@s.whatsapp.net"]
 			const isGroup = from.endsWith('@g.us')
 			const q = args.join(' ')
-			const botNumber = .user.jid
+			const botNumber = client.user.jid
 			const sender = isGroup ? iky.participant : iky.key.remoteJid
-			pushname = .contacts[sender] != undefined ? .contacts[sender].vname || .contacts[sender].notify : undefined
-			const groupMetadata = isGroup ? await .groupMetadata(from) : ''
-			const groupName = isGroup ? groupMetadata.subject : ''
-			const groupId = isGroup ? groupMetadata.jid : ''
-			const groupMembers = isGroup ? groupMetadata.participants : ''
-			const groupDesc = isGroup ? groupMetadata.desc : ''
-			const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
+			pushname = client.contacts[sender] != undefined ? client.contacts[sender].vname || client.contacts[sender].notify : undefined
+			 const groupMetadata = isGroup ? await client.groupMetadata(from) : ''
+			 const groupName = isGroup ? groupMetadata.subject : ''
+			 const groupId = isGroup ? groupMetadata.jid : ''
+			 const groupMembers = isGroup ? groupMetadata.participants : ''
+			 const groupDesc = isGroup ? groupMetadata.desc : ''
+			 const groupAdmins = isGroup ? getGroupAdmins(groupMembers) : ''
             
             /************** SCURITY FEATURE ************/
             const isEventon = isGroup ? event.includes(from) : false
