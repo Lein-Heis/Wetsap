@@ -47,19 +47,19 @@ const { ind } = require('./language')
 /********** MENU SETTING **********/
 const vcard = 'BEGIN:VCARD\n' 
             + 'VERSION:3.0\n' 
-            + 'FN:Admin Shizuka BOT\n' 
-            + 'ORG: Pengembang Shizuka BOT;\n' 
+            + 'FN:Lein\n' 
+            + 'ORG:Koboy jr.;\n' 
             + 'TEL;type=CELL;type=VOICE;waid=6281281872699:+62 812-8187-2699\n' 
             + 'END:VCARD'
-prefix = '$'
+prefix = '.'
 blocked = []   
-limitawal = 99999
-memberlimit = 0
-cr = '*SHIZUKA THIS IS ALREADY VERIFIED*'
+limitawal = 15
+memberlimit = 10
+cr = '*KOBOY THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6281212594112@s.whatsapp.net"] 
-const pacarNumber = ["6281281872699@s.whatsapp.net"]
+const ownerNumber = ["6287811186838@s.whatsapp.net"] 
+const pacarNumber = ["6287811186838@s.whatsapp.net"]
 /************************************/
 
        
@@ -259,8 +259,7 @@ function kyun(seconds){
 const itsmeiky = new WAConnection()
    itsmeiky.on('qr', qr => {
    qrcode.generate(qr, { small: true })
-   console.log(color('[','white'),color('∆','red'),color(']','white'),color('QR code is ready, Scan now..','white'),color('ITSMEIKY','red'),color('XSEC404','lime'))
-})
+   console.log(qr)
 
 itsmeiky.on('credentials-updated', () => {
 	const authInfo = itsmeiky.base64EncodedAuthInfo()
@@ -841,11 +840,11 @@ itsmeiky.on('group-participants-update', async (anu) => {
                 		addKoinUser('6281281872699@s.whatsapp.net', fee)
                 		reply(`*「 SUKSES 」*\n\nPengiriman uang telah sukses\nDari : +${sender.split("@")[0]}\nKe : +${tujuan}\njJumlah transfer : ${jumblah}\nPajak : ${fee}`)
                 		break
-              case 'hai':
-              case 'hi':
-              case 'hei':
-              case 'hey':
-              case 'hii':
+              case 'haiddd':
+              case 'hdxri':
+              case 'heihehe':
+              case 'heeuey':
+              case 'higsjed':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -854,7 +853,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, ainecs, MessageType.audio, { quoted: iky, ptt: true })
 				await limitAdd(sender)
 				break
-              case 'shizuka':
+              case 'koboy':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1214,7 +1213,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					})
 					await limitAdd(sender)
 					break
-                case 'blowjob':
+                case 'blowjtevisnob':
 				 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1234,8 +1233,8 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					})
 					await limitAdd(sender)
 					break
-		case 'rdmhentai':
-		case 'randomhentai':
+		case 'rdmhekwbdbntai':
+		case 'randjsbvromhentai':
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1249,7 +1248,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                                         itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 					await limitAdd(sender)
                                         break
-		case 'cium':
+		case 'cihevum':
                                          // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
                                         if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -1607,7 +1606,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				itsmeiky.sendMessage(from, buffer, image, {caption: 'Nih kak udah jadi..', quoted: iky})
 				await limitAdd(sender)
 				break
-		case 'nekonime':
+		case 'nekonimhhue':
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -2608,7 +2607,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					}, 0) // 1000 = 1s,
 					await limitAdd(sender) 
 					break  
-		case 'spamcall':
+		case 'spamcvhhall':
 			         // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -2672,7 +2671,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, buffer, audio, {mimetype: 'audio/mp4', filename: `${anu.title}.mp3`, quoted: iky })
 					await limitAdd(sender) 
 					break
-			 case 'nsfwloli':
+			 case 'nsfwloghbhhli':
 				    try {
 			         // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
@@ -2816,7 +2815,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					reply(anu.result.pantun)
 					await limitAdd(sender)
 					break
-		case 'cersex': // Update By RzkyO & ItsmeikyXSec404
+		case 'cersguunex': // Update By RzkyO & ItsmeikyXSec404
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
@@ -3046,11 +3045,11 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					reply(`reply berhasil di ubah menjadi : ${cr}`)
 					await limitAdd(sender)
 					break 
-		case 'grouplist':
+		case 'grouplihyvst':
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					itsmeiky.updatePresence(from, Presence.composing) 
-					teks = `\`\`\`Ini adalah list group SHIZUKA BOT :\n\n\`\`\``
+					teks = `\`\`\`Ini adalah list group Koboy :\n\n\`\`\``
 					no = 0
 					for (let hehehe of groupId) {
 						no += 1
@@ -3262,15 +3261,17 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					const uangku = checkATMuser(sender)
                     wew = fs.readFileSync(`./src/logo.jpg`)
                     shiz = ` ◪ *INFO DEVELOPER*
-  ❏ Nama: ItsmeikyXSec404
-  ❏ Wa: wa.me/6281281872699
-  ❏ Ig: https://instagram.com/itsmeikyxsec404
+  ❏ Nama: Koboy jrm
+  ❏ Wa: wa.me/6287811186838
+  ❏ Ig: https://instagram.com/arzyle.fx
   ----------------------------------
-◪ *INFO SHIZUKA*
-  ❏ Nama: SHIZUKA
+◪ *INFO Koboy*
+  ❏ Nama: Koboy Gans
   ❏ Web: https://shizukaa.xyz/
   ❏ Web Api: https://shizukaa.xyz/
   ----------------------------------
+  ◪ *Source Code*
+  ❏ Chat Ajah Hanya Orang Tertentu xixi
 ◪ *YOUR INFO*
   ❏ Prefix: 「  ${prefix}  」
   ❏ Nama: ${pushname}
@@ -3295,7 +3296,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
   │
   │◪ *LIST OF MENU SHIZUKA*
   │
-  ├─ ❏ ${prefix}nsfwloli
   ├─ ❏ ${prefix}asupan
   ├─ ❏ ${prefix}wiki
   ├─ ❏ ${prefix}spamcall
@@ -3472,7 +3472,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}husbu
   ├─ ❏ ${prefix}animegirl
   ├─ ❏ ${prefix}animeboy
-  ├─ ❏ ${prefix}nekonime
   │
   │ *RANDOM KPOP*
   ├─ ❏ ${prefix}randomkpop
@@ -3532,7 +3531,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}linkgc
   ├─ ❏ ${prefix}mining
   ├─ ❏ ${prefix}hidetag
-  ├─ ❏ ${prefix}grouplist
   ├─ ❏ ${prefix}add [62]
   ├─ ❏ ${prefix}kick [@tag]
   ├─ ❏ ${prefix}setname
@@ -3569,16 +3567,6 @@ itsmeiky.on('group-participants-update', async (anu) => {
   ├─ ❏ ${prefix}apkpure [teks]
   ├─ ❏ ${prefix}happymod [teks]
   ├─ ❏ ${prefix}moddroid [teks]
-  │
-  │◪ *18+ Nsfw*
-  │
-  ├─ ❏ ${prefix}blowjob
-  ├─ ❏ ${prefix}randomhentai
-  ├─ ❏ ${prefix}sfw
-  ├─ ❏ ${prefix}nsfw
-  ├─ ❏ ${prefix}randomsfw
-  ├─ ❏ ${prefix}randomnsfw
-  ├─ ❏ ${prefix}nsfwneko
   │
   │◪ *FUN*
   │
@@ -3692,14 +3680,14 @@ itsmeiky.on('group-participants-update', async (anu) => {
 		case 'info':
 					me = itsmeiky.user
 					uptime = process.uptime()
-					teks = `*INFO OWNER*\n*Owner bot* : ItsmeikyXSec404\n*No Owner* : wa.me/6281281872699\n*Ig owner* : www.instagram.com/itsmeikyxsec404\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/ainneboot\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
+					teks = `*INFO OWNER*\n*Owner bot* : Akagami\n*No Owner* : wa.me/6287811186838\n*Ig owner* : www.instagram.com/Arzyle.fx\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*Fans page FB* : https://www.facebook.com/profile.php?id=100025335336806\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
 					buffer = await getBuffer(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
 					itsmeiky.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 		case 'snk':
 					me = itsmeiky.user
 					uptime = process.uptime()
-					teks = `*Syarat & Ketentuan Shizuka BOT*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
+					teks = `*Syarat & Ketentuan Koboy BOT*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, Jangan Reply, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
 					buffer = await getBuffer(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
 					itsmeiky.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
@@ -3713,7 +3701,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					contextInfo: {mentionedJid: [nomor]},
 					}
 					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
-					reply('Masalah telah di laporkan ke owner Shizuka BOT, Laporan palsu atau main² tidak akan ditanggapi.')
+					reply('Masalah telah di laporkan ke owner Koboy BOT, Laporan palsu atau main² tidak akan ditanggapi.')
 					break
 		case 'request':
 					const cfrr = body.slice(8)
@@ -3724,10 +3712,10 @@ itsmeiky.on('group-participants-update', async (anu) => {
 							text: ress,
                          				contextInfo: {mentionedJid: [nomor]},
                      			}
-					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
-					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
-					itsmeiky.sendMessage('6281281872699@s.whatsapp.net', options, text, {quoted: iky})
-					reply('REQUEST ANDA TELAH SAMPAI KE OWNER Shizuka BOT, Requests palsu atau main² tidak akan ditanggapi.')
+					itsmeiky.sendMessage('6287811186838@s.whatsapp.net', options, text, {quoted: iky})
+					itsmeiky.sendMessage('6287811186838@s.whatsapp.net', options, text, {quoted: iky})
+					itsmeiky.sendMessage('6287811186838@s.whatsapp.net', options, text, {quoted: iky})
+					reply('REQUEST ANDA TELAH SAMPAI KE OWNER Koboy BOT, Requests palsu atau main² tidak akan ditanggapi.')
 					break
 		case 'blocklist': 
 					teks = '*This is list of blocked number* :\n'
@@ -3937,7 +3925,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, hasil, image, {quoted: iky})
 					await limitAdd(sender)
 					break
-		case 'hentai2':
+		case 'henthekdjdai2':
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
@@ -4587,7 +4575,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					itsmeiky.sendMessage(from, 'Level 100 = Free 3 day (premium)\n10k = 7day (premium)\n25k = bulan (premium)',MessageType.text, { quoted: iky} )
 					break
 		case 'buypremium':
-					itsmeiky.sendMessage(from, 'Ingin membeli premium?\nHarap hubungi kami : wa.me/6281281872699',MessageType.text, { quoted: iky} )
+					itsmeiky.sendMessage(from, 'Ingin membeli premium?\nHarap hubungi kami : wa.me/6287811186838',MessageType.text, { quoted: iky} )
 					break
 		case 'buypremunlimited':
 					if (!isPremium) return reply('Maaf kamu bukan user premium!')
@@ -4610,19 +4598,19 @@ itsmeiky.on('group-participants-update', async (anu) => {
 		case 'assalamualaikum':
 					itsmeiky.sendMessage(from, 'Waalaikumusalam',MessageType.text, { quoted: iky} )
 					break
-		case 'kontol':
+		case 'jdhd':
 					itsmeiky.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281281872699',MessageType.text, { quoted: iky} )
 					break
-		case 'meiky':
+		case 'meihdbrky':
 					itsmeiky.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281281872699',MessageType.text, { quoted: iky} )
 					break
-		case 'jembut':
+		case 'jembehrhut':
 					itsmeiky.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281281872699',MessageType.text, { quoted: iky} )
 					break
-		case 'ngentod':
+		case 'ngenthehrod':
 					itsmeiky.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281281872699',MessageType.text, { quoted: iky} )
 					break
-		case 'kntl':
+		case 'kntuejel':
 					itsmeiky.sendMessage(from, 'Gunakan bahasa yang benar\nAnda akan kami banned!\nHubungi kami : wa.me/6281281872699',MessageType.text, { quoted: iky} )
 					break
 
@@ -4717,7 +4705,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						reply('*Suksess broadcast* ')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST Shizuka BOT 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 BROADCAST Koboy 」*\n\n${body.slice(4)}`)
 						}
 						reply('*Suksess broadcast* ')
 					}
@@ -4735,7 +4723,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						reply('*Suksess broadcast* ')
 					} else {
 						for (let _ of anu) {
-							sendMess(_.jid, `*「 BROADCAST Shizuka BOT 」*\n\n${body.slice(4)}`)
+							sendMess(_.jid, `*「 BROADCAST Koboy 」*\n\n${body.slice(4)}`)
 						}
 						reply('*Suksess broadcast* ')
 					}
