@@ -58,7 +58,7 @@ memberlimit = 0
 cr = '*KOBOY THIS IS ALREADY VERIFIED*'
 
 /******** OWNER NUMBER**********/
-const ownerNumber = ["6287811186838@s.whatsapp.net"] 
+const ownerNumber = ["6285347248945@s.whatsapp.net"] 
 const pacarNumber = ["6287811186838@s.whatsapp.net"]
 /************************************/
 
@@ -1095,7 +1095,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=BotWeA`)
+				data = await fetchJson(`https://tobz-api.herokuapp.com/api/moddroid?q=${body.slice(10)}&apikey=onlyonedeveloper`)
 				hepi = data.result[0] 
 				teks = `*Nama*: ${data.result[0].title}\n*Publisher*: ${hepi.publisher}\n*Mod info:* ${hepi.mod_info}\n*size*: ${hepi.size}\n*Latest version*: ${hepi.latest_version}\n*Genre*: ${hepi.genre}\n*Link:* ${hepi.link}\n*Download*: ${hepi.download}`
 				buffer = await getBuffer(hepi.image)
@@ -1107,7 +1107,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  if (!isRegistered) return reply( ind.noregis())
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=BotWeA`)
+				data = await fetchJson(`https://tobz-api.herokuapp.com/api/happymod?q=${body.slice(10)}&apikey=onlyonedeveloper`)
 				hupo = data.result[0] 
 				teks = `*Nama*: ${data.result[0].title}\n*version*: ${hupo.version}\n*size:* ${hupo.size}\n*root*: ${hupo.root}\n*purchase*: ${hupo.price}\n*link*: ${hupo.link}\n*download*: ${hupo.download}`
 				buffer = await getBuffer(hupo.image)
@@ -1157,7 +1157,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				itsmeiky.updatePresence(from, Presence.composing) 
-				data = await fetchJson(`https://tobz-api.herokuapp.com/api/bitly?url=${args[0]}&apikey=BotWeA`)
+				data = await fetchJson(`https://tobz-api.herokuapp.com/api/bitly?url=${args[0]}&apikey=onlyonedeveloper`)
 				hasil = `link : ${args[0]}\n\nOutput : ${data.result}`
 				reply(hasil)
 				await limitAdd(sender)
@@ -1614,7 +1614,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
                                         gatauda = body.slice(8)
 					reply(ind.wait())
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=BotWeA`, {method: 'get'})
+                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/nekonime?apikey=onlyonedeveloper`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
                                         itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 					await limitAdd(sender)
@@ -1626,7 +1626,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				gatauda = body.slice(13)
 				reply(ind.wait())
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/husbu2?apikey=BotWeA`, {method: 'get'})
+				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/husbu2?apikey=onlyonedeveloper`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
@@ -1637,7 +1637,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				    try {
-						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomshota?apikey=BotWeA`)
+						res = await fetchJson(`https://tobz-api.herokuapp.com/api/randomshota?apikey=onlyonedeveloper`)
 						buffer = await getBuffer(res.image)
 						itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Ingat! Cintai husbumu'})
 					} catch (e) {
@@ -1654,7 +1654,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (args.length < 1) return reply('Teks nya mana kak?')
 				tels = body.slice(10)
 				reply(ind.wait())
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${tels}&apikey=BotWeA`, {method: 'get'})
+				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=jokerlogo&text=${tels}&apikey=onlyonedeveloper`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
@@ -1666,7 +1666,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				gatauda = body.slice(5)
 				reply(ind.wait())
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=BotWeA`, {method: 'get'})
+				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomanime?apikey=onlyonedeveloper`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 				await limitAdd(sender)
@@ -1745,7 +1745,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				reply(ind.wait())
-				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomkpop?apikey=BotWeA`, {method: 'get'})
+				anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomkpop?apikey=onlyonedeveloper`, {method: 'get'})
 				buffer = await getBuffer(anu.result)
 				itsmeiky.sendMessage(from, buffer, image, {quoted: iky, caption: 'Nih kpopnya kak...'})
 				await limitAdd(sender)
@@ -1847,7 +1847,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (!isPremium) return reply('Maaf kamu bukan user premium!')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-				data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=BotWeA`, {method: 'get'})
+				data = await fetchJson(`https://tobz-api.herokuapp.com/api/joox?q=${body.slice(6)}&apikey=onlyonedeveloper`, {method: 'get'})
 				if (data.error) return reply(data.error)
 				infomp3 = `*Lagu Ditemukan!!!*\nJudul : ${data.result.judul}\nAlbum : ${data.result.album}\nDipublikasi : ${data.result.dipublikasi}`
 				buffer = await getBuffer(data.result.thumb)
@@ -2170,7 +2170,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/infogempa?apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/infogempa?apikey=onlyonedeveloper`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					buffer= await getBuffer(anu.map)
 					hasil = `*Potensi*\n${anu.potensi}\n*Lokasi*\n${anu.lokasi}\n*Magnitude*\n${anu.magnitude}\n*Koordinat*\n${anu.koordinat}\n*Kedalaman*\n${anu.kedalaman}\n*Waktu*\n${anu.waktu}\n*Map*\n${anu.map}`
@@ -2183,7 +2183,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cuaca?wilayah=${tels}&apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cuaca?wilayah=${tels}&apikey=onlyonedeveloper`, {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					hasil = `*Tempat* : ${anu.result.tempat}\n*Cuaca* : ${anu.result.cuaca}\n*Angin* : ${anu.result.angin}\n*Suhu* : ${anu.result.suhu}\n*Kelembapan* : ${anu.result.kelembapan}`
 					itsmeiky.sendMessage(from, hasil, text, {quoted: iky})
@@ -2751,7 +2751,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					 // Fix Bug By ItsmeikyXSec404				
                  if (!isRegistered) return reply( ind.noregis())
 					teks = body.slice(6)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/lirik?q=${teks}&apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/lirik?q=${teks}&apikey=onlyonedeveloper`, {method: 'get'})
 					reply('Lirik dari lagu '+teks+' adalah :\n\n'+anu.result.lirik)
 					await limitAdd(sender)
 					break
@@ -2780,7 +2780,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
                  if (!isRegistered) return reply( ind.noregis())
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
-					data = await fetchJson(`https://tobz-api.herokuapp.com/api/randomfmylife?apikey=BotWeA`)
+					data = await fetchJson(`https://tobz-api.herokuapp.com/api/randomfmylife?apikey=onlyonedeveloper`)
 					hasil = data.result
 					reply(hasil)
 					await limitAdd(sender)
@@ -2792,7 +2792,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					if (args.length < 1) return reply('Judul lagunya mana kak')
 					tels = body.slice(7)					
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/chord?q=${tels}&apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/chord?q=${tels}&apikey=onlyonedeveloper`, {method: 'get'})
 					reply(anu.result)
 					await limitAdd(sender)
 					break
@@ -2926,7 +2926,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 					if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					ige = body.slice(10)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/film2?q=${ige}&apikey=BotWeA`)
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/film2?q=${ige}&apikey=onlyonedeveloper`)
 					buffer7 = await getBuffer(anu.result.thumbnail)
 					capt = `➸ Judul : ${anu.result.judul}\n*➸ Bahasa :* ${anu.result.bahasa}\n*➸ Negara :* ${anu.result.negara}\n*➸ Aktor :* ${anu.result.aktor}\n*➸ Boxoffice :* ${anu.result.boxoffice}\n*➸ Dirilis :* ${anu.result.dirilis}\n*➸ Durasi :* ${anu.result.durasi}\n*➸ Katagori :* ${anu.result.kategori}\n*➸ Metascore :* ${anu.result.metascore}\n*➸ Vote :* ${anu.result.voting_imdb}\n*➸ Negara :* ${anu.result.negara}\n*➸ Sinopsis :* ${anu.result.sinopsis}\n*➸ Penghargaan :* ${anu.result.penghargaan}`
 					itsmeiky.sendMessage(from, buffer7, image, {quoted: iky, caption: capt})
@@ -3678,14 +3678,12 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender)
                                         break
 		case 'info':
-					me = itsmeiky.user
 					uptime = process.uptime()
 					teks = `*INFO OWNER*\n*Owner bot* : Akagami\n*No Owner* : wa.me/6287811186838\n*Ig owner* : www.instagram.com/Arzyle.fx\n━━━━━━━━━━━━━━━━━━━━\n*INFO BOT*\n*Nama bot* : ${me.name}\n*Nomor bot* : @${me.jid.split('@')[0]}\n*Prefix* : ${prefix}\n*Total block contact* : ${blocked.length}\n*The bot is active on* : ${kyun(uptime)}\n*FB* : Akagami Zen\n*Ketik* : ${prefix}lpr _Untuk melaporkan admin bot melalui bot_\n*Ketik* : ${prefix}owner untuk menghubungi admin bot kami.`
 					buffer = await getBuffer(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
 					itsmeiky.sendMessage(from, buffer, image, {caption: teks, contextInfo:{mentionedJid: [me.jid]}})
 					break
 		case 'snk':
-					me = itsmeiky.user
 					uptime = process.uptime()
 					teks = `*Syarat & Ketentuan Koboy BOT*\n1. Teks dan nama pengguna WhatsApp anda kami simpan di dalam server selama bot aktif.\n2. Data anda akan di hapus ketika bot offline.\n3. Kami tidak menyimpan gambar, video, file, audio, dan dokumen yang anda kirim.\n4. Kami tidak pernah meminta anda untuk memberikan informasi pribadi.\n5. Jika menemukan Bug/Error silahkan langsung lapor ke Owner bot.\n6. Cukup perintah 1x jika bot tidak merespon harap ulangi kembali, Jika di ulangi kembali tidak merespon, Bot tidak aktif\n7. Dilarang spam, No Reply, Share virus virtex, Telpon, Video call, Kami akan blockir anda.\n8. Apapun yang anda perintah pada bot ini, *KAMI TIDAK BERTANGGUNG JAWAB!*\n\nTERIMA KASIH !~`
 					buffer = await getBuffer(`https://i.ibb.co/LZNvTC1/36d5d64d9774.jpg`)
@@ -3896,7 +3894,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
                                         gatauda = body.slice(6)
 					reply(ind.wait())
-                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=BotWeA`, {method: 'get'})
+                                        anu = await fetchJson(`https://tobz-api.herokuapp.com/api/randomloli?apikey=onlyonedeveloper`, {method: 'get'})
                                         buffer = await getBuffer(anu.result)
                                         itsmeiky.sendMessage(from, buffer, image, {quoted: iky})
 					await limitAdd(sender)
@@ -3948,7 +3946,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender)
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson('https://tobz-api.herokuapp.com/api/cry?apikey=BotWeA', {method: 'get'})
+					anu = await fetchJson('https://tobz-api.herokuapp.com/api/cry?apikey=onlyonedeveloper', {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -3967,7 +3965,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					await limitAdd(sender)
 					ranp = getRandom('.gif')
 					rano = getRandom('.webp')
-					anu = await fetchJson('https://tobz-api.herokuapp.com/api/hug?apikey=BotWeA', {method: 'get'})
+					anu = await fetchJson('https://tobz-api.herokuapp.com/api/hug?apikey=onlyonedeveloper', {method: 'get'})
 					if (anu.error) return reply(anu.error)
 					exec(`wget ${anu.result} -O ${ranp} && ffmpeg -i ${ranp} -vcodec libwebp -filter:v fps=fps=15 -lossless 1 -loop 0 -preset default -an -vsync 0 -s 512:512 ${rano}`, (err) => {
 						fs.unlinkSync(ranp)
@@ -4367,7 +4365,7 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				if (args.length < 1) return reply('kota nya mana kak?')
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${body.slice(14)}&apikey=BotWeA`, {method: 'get'})
+					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/jadwalshalat?q=${body.slice(14)}&apikey=onlyonedeveloper`, {method: 'get'})
 					sholat = `Ashar : ${anu.result.ashar}\nDzuhur : ${anu.result.dzuhur}\nMagrib : ${anu.result.maghrib}\nIsha : ${anu.result.isha}\nSubuh : ${anu.result.subuh}`
 					itsmeiky.sendMessage(from, sholat, text, {quoted: iky})
 					await limitAdd(sender)
