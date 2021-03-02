@@ -257,8 +257,9 @@ function kyun(seconds){
 /********** FUNCTION ***************/
 
 const client = new WAConnection()
- client.on('qr', (qr) => {
-	 console.log(qr)
+   itsmeiky.on('qr', qr => {
+   qrcode.generate(qr, { small: true })
+   console.log(qr)
 
 itsmeiky.on('credentials-updated', () => {
 	const authInfo = itsmeiky.base64EncodedAuthInfo()
