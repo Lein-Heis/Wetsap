@@ -767,7 +767,7 @@ client.on('group-participants-update', async (anu) => {
 		var kic = `${sender.split("@")[0]}@s.whatsapp.net`
 		reply(`Link Group Terdeteksi maaf ${sender.split("@")[0]} anda akan di kick dari group 5detik lagi`)
 		setTimeout( () => {
-			.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
+			client.groupRemove(from, [kic]).catch((e)=>{reply(`*ERR:* ${e}`)})
 		}, 5000)
 		setTimeout( () => {
 			.updatePresence(from, Presence.composing)
