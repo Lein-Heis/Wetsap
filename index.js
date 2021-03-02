@@ -2350,7 +2350,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					data = await fetchJson(`https://api.vhtear.com/trendtwitter?country=indonesia&apikey=c1d162b46e634f389efa1ac715f03d03`, {method: 'get'})
-					teks = ================\n'
+					teks = '================\n'
 					for (let i of data.result) {
 						teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
 					}
