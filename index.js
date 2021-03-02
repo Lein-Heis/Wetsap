@@ -363,23 +363,23 @@ client.on('group-participants-update', async (anu) => {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 			}
 			const reply = (teks) => {
-				.sendMessage(from, teks, text, {quoted:iky})
-			}
-			const sendMess = (hehe, teks) => {
-				.sendMessage(hehe, teks, text)
-			}
-			const mentions = (teks, memberr, id) => {
-				(id == null || id == undefined || id == false) ? .sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : .sendMessage(from, teks.trim(), extendedText, {quoted: iky, contextInfo: {"mentionedJid": memberr}})
-			}
-			const sendImage = (teks) => {
-		    .sendMessage(from, teks, image, {quoted:iky})
-		    }
-		    const costum = (pesan, tipe, target, target2) => {
-			.sendMessage(from, pesan, tipe, {quoted: { key: { fromMe: false, participant: `${target}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target2}` }}})
-			}
-		    const sendPtt = (teks) => {
-		    .sendMessage(from, audio, mp3, {quoted:iky})
-		    }
+				 client.sendMessage(from, teks, text, {quoted:iky})
+			 }
+			 const sendMess = (hehe, teks) => {
+				 client.sendMessage(hehe, teks, text)
+			 }
+			 const mentions = (teks, memberr, id) => {
+				 (id == null || id == undefined || id == false) ? client.sendMessage(from, teks.trim(), extendedText, {contextInfo: {"mentionedJid": memberr}}) : client.sendMessage(from, teks.trim(), extendedText, {quoted: iky, contextInfo: {"mentionedJid": memberr}})
+			 }
+			 const sendImage = (teks) => {
+			 client.sendMessage(from, teks, image, {quoted:iky})
+			 }
+			 const costum = (pesan, tipe, target, target2) => {
+			 client.sendMessage(from, pesan, tipe, {quoted: { key: { fromMe: false, participant: `${target}`, ...(from ? { remoteJid: from } : {}) }, message: { conversation: `${target2}` }}})
+			 }
+			 const sendPtt = (teks) => {
+			 client.sendMessage(from, audio, mp3, {quoted:iky})
+			 }
 	        /*****************END SCURITY FEATURE ********/
 			
 		//role level
