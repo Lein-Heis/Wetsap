@@ -706,19 +706,6 @@ client.on('group-participants-update', async (anu) => {
 					 if (found === false) {
 						 let obj = { id: sender, limit: 0 }
 						 _limit.push(obj)
-						 fs.writeFileSync('./database/user/limit.json', JSON.stringify(_limit))const checkLimit = (sender) => {
-			   let found = false
-					 for (let lmt of _limit) {
-						 if (lmt.id === sender) {
-							 let limitCounts = limitawal - lmt.limit
-							 if (limitCounts <= 0) return client.sendMessage(from,`Limit anda sudah habis\n\n_Note : limit bisa di dapatkan dengan cara ${prefix}buylimit dan naik level_`, text,{ quoted: iky})
-							 client.sendMessage(from, ind.limitcount(limitCounts), text, { quoted : iky})
-							 found = true
-						 }
-					 }
-					 if (found === false) {
-						 let obj = { id: sender, limit: 0 }
-						 _limit.push(obj)
 						 fs.writeFileSync('./database/user/limit.json', JSON.stringify(_limit))
 						 client.sendMessage(from, ind.limitcount(limitCounts), text, { quoted : iky})
                     }
