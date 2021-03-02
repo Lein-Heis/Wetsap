@@ -256,7 +256,7 @@ function kyun(seconds){
 }
 /********** FUNCTION ***************/
 
-const  = new WAConnection()
+const client = new WAConnection()
    .on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(qr)
