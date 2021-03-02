@@ -257,19 +257,24 @@ function kyun(seconds){
 /********** FUNCTION ***************/
 
 const client = new WAConnection()
-   .on('qr', qr => {
-   qrcode.generate(qr, { small: true })
-   console.log(qr)
-
-.on('credentials-updated', () => {
-	const authInfo = .base64EncodedAuthInfo()
-   console.log(`credentials updated!`)
-   fs.writeFileSync('./session.json', JSON.stringify(authInfo, null, '\t'))
-})
-fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
-.connect();
-
-
+ client.on('qr', (qr) => {
+	 console.log(qr)
+ })
+ if(!sessionWa === '[]') fs.writeFileSync('./session.json', JSON.stringify(sessionWa))
+ fs.existsSync('./session.json') && client.loadAuthInfo('./session.json')
+ 
+ 
+ client.on('connecting', () => {
+	 //
+ })
+ client.on('open', () => {
+	 //
+ })
+ 
+ await client.connect({timeoutMs: 30*1000})
+ await db.updateDataSession(JSON.stringify(client.base64EncodedAuthInfo(), null, '\t'))
+ 
+ 
 .on('group-participants-update', async (anu) => {
 		if (!welkom.includes(anu.jid)) return
 		try {
