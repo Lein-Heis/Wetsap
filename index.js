@@ -256,7 +256,7 @@ function kyun(seconds){
 }
 /********** FUNCTION ***************/
 
-const client = new WAConnection()
+const itsmeiky = new WAConnection()
    itsmeiky.on('qr', qr => {
    qrcode.generate(qr, { small: true })
    console.log(qr)
@@ -5045,6 +5045,9 @@ itsmeiky.on('group-participants-update', async (anu) => {
 					}
 					}
 		} catch (e) {
-			console.log('Error : %s', color(e, 'red'))
-		}
-	})
+			 console.log('Error : %s', color(e, 'red'))
+		 }
+	 })
+}
+
+starts()
