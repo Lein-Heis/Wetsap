@@ -4763,10 +4763,10 @@ itsmeiky.on('group-participants-update', async (anu) => {
 						itsmeiky.groupSettingChange(from, GroupSettingChange.messageSend, true)
 					}
 					break      
-            case 'admin':
-            case 'owner':
-            case 'creator':
-            case 'developer':
+            case 'admigdhdn':
+            case 'ownhdhder':
+            case 'creabsbdtor':
+            case 'dejejeveloper':
                   itsmeiky.sendMessage(from, {displayname: "Jeff", vcard: vcard}, MessageType.contact, { quoted: iky})
                   itsmeiky.sendMessage(from, 'Tuh nomer owner ku >_<, jangan spam atau ku block kamu',MessageType.text, { quoted: iky} )
 					break    
