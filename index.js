@@ -1119,7 +1119,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				data = await fetchJson(`https://api.zeks.xyz/api/apkpure?q=${body.slice(9)}&apikey=apivinz`, {method: 'get'})
-				teks = '=================\n'
+				teks = ================\n'
 				for (let i of data.result) {
 					teks += `*Nama APK* : ${i.title}\n*Link* : ${i.url}\n*Rating* : ${i.rating}\n=================\n`
 					}
@@ -1131,7 +1131,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				data = await fetchJson(`https://api.vhtear.com/jadwalbola&apikey=c1d162b46e634f389efa1ac715f03d03`, {method: 'get'})
-				teks = '=================\n'
+				teks = ================\n'
 				for (let i of data.result.data) {
 					teks += `❏ *Kick Off* : ${i.kickoff}\n❏ *Pertandingan* : ${i.pertandingan}\n❏ *Stasiuntv* : ${i.stasiuntv}\n\n=================\n\n`
 					}
@@ -1143,7 +1143,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 				data = await fetchJson(`https://api.vhtear.com/corona&apikey=c1d162b46e634f389efa1ac715f03d03`, {method: 'get'})
-				teks = '=================\n'
+				teks = ================\n'
 				for (let i of data.result) {
 					teks += `*Updated* : ${i.updated}\n*Country* : ${i.country}\n*CountryInfo* : \n*ID* : ${i.countryInfo._id}\n*iso2* : ${i.countryInfo.iso2}\n*iso3* : ${i.countryInfo.iso3}\n*lat* : ${i.countryInfo.lat}\n*long* : ${i.countryInfo.long}\n*cases* : ${i.cases}\n*todayCases* : ${i.todayCases}\n*deaths* : ${i.deaths}\n*todayDeaths* : ${i.todayDeaths}\n*recovered* : ${i.recovered}\n*todayRecovered* : ${i.todayRecovered}\n*active* : ${i.active}\n*critical* : ${i.critical}\n*casesPerOneMillion* : ${i.casesPerOneMillion}\n*deathsPerOneMillion* : ${i.deathsPerOneMillion}\n*tests* : ${i.tests}\n*testsPerOneMillion* : ${i.testsPerOneMillion}\n*population* : ${i.population}\n*continent* : ${i.continent}\n*oneCasePerPeople* : ${i.oneCasePerPeople}\n*oneDeathPerPeople* : ${i.oneDeathPerPeople}\n*oneTestPerPeople* : ${i.oneTestPerPeople}\n*activePerOneMillion* : ${i.activePerOneMillion}\n*recoveredPerOneMillion* : ${i.recoveredPerOneMillion}\n*criticalPerOneMillion* : ${i.criticalPerOneMillion}\n=================\n`
 					}
@@ -2244,7 +2244,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.zeks.xyz/api/tribunews?apikey=apivinz`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Judul* : ${i.title}\n*Time* : ${i.time}\n*Link* : ${i.url}\n*Keterangan* : ${i.ket}\n=================\n`
 					}
@@ -2257,7 +2257,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.zeks.xyz/api/liputan6?apikey=benbenz`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Judul* : ${i.title}\n*Url* : ${i.url}\n*Keterangan* : ${i.ket}\n*Category* : ${i.category}\n*Time* : ${i.time}\n=================\n`
 					}
@@ -2270,7 +2270,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.zeks.xyz/api/foxnews?apikey=benbenz`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Judul* : ${i.title}\n*Url* : ${i.url}\n*Country* : ${i.country}\n*Content* : ${i.content}\n*Time* : ${i.time}\n=================\n`
 					}
@@ -2283,7 +2283,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.zeks.xyz/api/nickepep?apikey=benbenz`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Nick* : ${i}\n=================\n`
 					}
@@ -2297,7 +2297,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`http://lolhuman.herokuapp.com/api/newsinfo?apikey=WEMPYGANSS`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Source:* : ${i.source.name}\n*Author* : ${i.author}\n*Title* : ${i.title}\n*Description* : ${i.description}\n*Url* : ${i.url}\n*Published At* : ${i.publishedAt}\n*Content* : ${i.content}\n=================\n`
 					}
@@ -2310,7 +2310,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.zeks.xyz/api/film/2?q=${body.slice(6)}&apikey=benbenz`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
 					}
@@ -2323,7 +2323,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://api.zeks.xyz/api/film/2?q=${body.slice(6)}&apikey=benbenz`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Title:* : ${i.title}\n*Url* : ${i.url}\n=================\n`
 					}
@@ -2337,7 +2337,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					.updatePresence(from, Presence.composing) 
 					data = await fetchJson(`https://docs-jojo.herokuapp.com/api/infohoax`, {method: 'get'})
-					teks = '=================\n'
+					teks = '================\n'
 					for (let i of data.result) {
 						teks += `*Gambar* : ${i.image}\n*Title* : ${i.title}\n*link* : ${i.link}\n*tag* : ${i.tag}\n=================\n`
 					}
@@ -2350,7 +2350,7 @@ fs.existsSync('./session.json') && .loadAuthInfo('./session.json')
 					if (isLimit(sender)) return reply(ind.limitend(pusname))
 				if (isBanned) return reply('Maaf kamu sudah terbenned!')
 					data = await fetchJson(`https://api.vhtear.com/trendtwitter?country=indonesia&apikey=c1d162b46e634f389efa1ac715f03d03`, {method: 'get'})
-					teks = '=================\n'
+					teks = ================\n'
 					for (let i of data.result) {
 						teks += `*Hastag* : ${i.hastag}\n*link* : ${i.link}\n*rank* : ${i.rank}\n*Tweet* : ${i.tweet}\n=================\n`
 					}
